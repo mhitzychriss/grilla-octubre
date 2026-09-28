@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Grilla de Contenidos Octubre 2026 — Mhitzy Chriss</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0d0d0f;--bg2:#141416;--bg3:#1c1c1f;--border:rgba(255,255,255,.07);--border2:rgba(255,255,255,.13);--text:#f0eee8;--text2:#9a9890;--text3:#6a6866;--accent:#e8855a;
+--hb:rgba(232,133,90,.10);--hbr:rgba(232,133,90,.30);--h:#e8855a;--lb:rgba(90,157,232,.08);--lbr:rgba(90,157,232,.25);--l:#5a9de8;--rb:rgba(155,125,232,.08);--rbr:rgba(155,125,232,.25);--r:#9b7de8;--sb:rgba(255,255,255,.04);--sbr:rgba(255,255,255,.09);--s:#6a6866;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#0d0d0f;color:var(--text);font-family:'DM Sans',system-ui,sans-serif;font-size:14px;line-height:1.6;padding:36px 28px;min-height:100vh}
+.wrap{max-width:820px;margin:0 auto}
+.brand{font-family:'Playfair Display',Georgia,serif;font-size:11px;color:var(--accent);letter-spacing:.14em;text-transform:uppercase;margin-bottom:5px}
+.title{font-family:'Playfair Display',Georgia,serif;font-size:32px;font-weight:900;line-height:1.1;margin-bottom:6px}
+.subtitle{font-size:12px;color:var(--text2);font-weight:300;margin-bottom:32px}
+.stats{display:flex;gap:10px;margin-bottom:28px;flex-wrap:wrap}
+.stat{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:12px 16px;min-width:100px}
+.stat-label{font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--text3);margin-bottom:3px}
+.stat-value{font-family:'Playfair Display',Georgia,serif;font-size:22px;font-weight:700;line-height:1}
+.stat-value span{font-size:11px;font-family:'DM Sans',sans-serif;color:var(--text2);font-weight:400}
+.legend{display:flex;gap:8px 18px;flex-wrap:wrap;margin-bottom:24px;padding:14px 16px;background:var(--bg2);border-radius:10px;border:1px solid var(--border)}
+.legend-title{font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--text3);width:100%;margin-bottom:2px}
+.leg{display:flex;align-items:center;gap:7px;font-size:11.5px;color:var(--text2)}
+.legdot{width:28px;height:6px;border-radius:3px;flex-shrink:0}
+.leg strong{color:var(--text);font-weight:600}
+.tabs{display:flex;gap:4px;margin-bottom:22px;background:var(--bg2);padding:4px;border-radius:10px;border:1px solid var(--border);width:fit-content;max-width:100%;overflow-x:auto}
+.tab{padding:6px 16px;border-radius:7px;font-size:12px;font-weight:500;cursor:pointer;border:1px solid transparent;background:transparent;color:var(--text2);font-family:inherit;white-space:nowrap}
+.tab:hover{color:var(--text)}
+.tab.active{background:var(--bg3);color:var(--text);border-color:var(--border2)}
+.tab:focus-visible{outline:2px solid var(--accent)}
+.week{display:none}.week.active{display:block}
+.week-label{font-size:10px;font-weight:600;color:var(--accent);letter-spacing:.1em;text-transform:uppercase;margin-bottom:18px;padding-bottom:10px;border-bottom:1px solid var(--border)}
+.pending{padding:40px 20px;text-align:center;color:var(--text2);background:var(--bg2);border:1px dashed var(--border2);border-radius:10px}
+.day{margin-bottom:14px}
+.day-header{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+.day-name{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);background:rgba(232,133,90,.08);border:1px solid rgba(232,133,90,.2);border-radius:6px;padding:4px 10px;white-space:nowrap}
+.day-divider{flex:1;height:1px;background:var(--border)}
+.cards{display:flex;flex-direction:column;gap:6px}
+.card{border-radius:8px;padding:10px 12px 10px 15px;border:1px solid;position:relative;overflow:hidden}
+.card::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%}
+.h{background:var(--hb);border-color:var(--hbr)}.h::before{background:var(--h)}
+.l{background:var(--lb);border-color:var(--lbr)}.l::before{background:var(--l)}
+.r{background:var(--rb);border-color:var(--rbr)}.r::before{background:var(--r)}
+.s{background:var(--sb);border-color:var(--sbr)}.s::before{background:var(--s)}
+.card-top{display:flex;align-items:center;gap:6px;margin-bottom:5px;flex-wrap:wrap}
+.badge{font-size:9px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:2px 6px;border-radius:3px;white-space:nowrap}
+.h .badge{background:rgba(232,133,90,.2);color:var(--h)}.l .badge{background:rgba(90,157,232,.2);color:var(--l)}.r .badge{background:rgba(155,125,232,.2);color:var(--r)}.s .badge{background:rgba(255,255,255,.06);color:var(--text2)}
+.platform{font-size:9px;font-weight:600;color:var(--text3);letter-spacing:.05em;text-transform:uppercase}
+.card-title{font-size:12px;font-weight:600;line-height:1.35;margin-bottom:3px}
+.h .card-title{color:#f0a882}.l .card-title{color:#8ab8f0}.r .card-title{color:#b8a0f0}
+.card-body{font-size:11px;font-weight:300;line-height:1.5;color:var(--text2)}
+.pillar{font-size:9.5px;color:var(--text3);margin-top:4px;letter-spacing:.02em}
+.sec{margin-top:8px;padding-top:8px;border-top:1px solid rgba(255,255,255,.06)}
+.sec-label{font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:4px}
+.field{width:100%;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:5px;padding:6px 8px;font-size:11px;color:var(--text2);font-family:inherit;resize:vertical;min-height:36px;line-height:1.4;outline:none}
+.field:focus{border-color:rgba(255,255,255,.25);color:var(--text)}
+.field::placeholder{color:var(--text3);font-style:italic}
+@media(max-width:600px){body{padding:20px 14px}.title{font-size:24px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="brand">Mhitzy Chriss</div>
+<h1 class="title">Grilla de Contenidos · Octubre 2026</h1>
+<p class="subtitle">Publicación diaria · Instagram, TikTok y LinkedIn</p>
+
+<div class="stats">
+  <div class="stat"><div class="stat-label">Semana activa</div><div class="stat-value">1 <span>/ 5</span></div></div>
+  <div class="stat"><div class="stat-label">Piezas</div><div class="stat-value">16 <span>esta semana</span></div></div>
+  <div class="stat"><div class="stat-label">Historias</div><div class="stat-value">7 <span>1 por día</span></div></div>
+  <div class="stat"><div class="stat-label">Plataformas</div><div class="stat-value">3 <span>redes</span></div></div>
+</div>
+
+<div class="legend">
+  <div class="legend-title">Tipos de contenido</div>
+  <div class="leg"><div class="legdot" style="background:var(--h)"></div><strong>Video / Reel</strong> con historia personal</div>
+  <div class="leg"><div class="legdot" style="background:var(--l)"></div><strong>Trend / Plantilla</strong> adaptado</div>
+  <div class="leg"><div class="legdot" style="background:var(--r)"></div><strong>Post / Carrusel</strong></div>
+  <div class="leg"><div class="legdot" style="background:var(--s)"></div><strong>Historia</strong> del día</div>
+</div>
+
+<div class="tabs" role="tablist" id="tabs"></div>
+<div id="weeks"></div>
+</div>
+
+<script>
+const W=[
+["Semana 1 · 28/09 – 04/10","Enfoque, cuidado y propósito",[
+["Lunes","28/09",[
+["r","LinkedIn","Construcción profesional","La diferencia entre estar ocupada y pensar estratégicamente","Reflexión a partir del workshop de pensamiento estratégico. Contar cómo el workshop te hizo cuestionar una forma de trabajar que quizá ya tenías automatizada: responder a todo lo que aparece vs. detenerte a identificar qué realmente mueve la meta. Cerrar con la idea de que crecer profesionalmente no es solamente hacer más, sino aprender a decidir qué merece tu atención.","Post de texto + foto del workshop"],
+["l","TikTok","Marca personal / Crecimiento","Volver a poner el foco","Video de plantilla con una frase breve relacionada con el aprendizaje de la semana: cuando todo parece importante, necesitas volver a identificar qué es realmente prioritario.","Video / plantilla"],
+["s","Todas","Motivación","Volver a intentar también es avanzar","Enseñanza breve para comenzar la semana, conectada con tu narrativa de proceso y construcción.","Historia"]]],
+["Martes","29/09",[
+["h","Instagram","Marca personal / Vida real","Cuidarme también es parte de construirme","Publicación de la colaboración dental, integrada a tu narrativa personal. No enfocarla solo en “resultado dental”, sino en el acto de volver a ocuparte de aspectos de ti que también forman parte de la seguridad con la que te presentas al mundo.","Reel"],
+["h","TikTok","Vida real / Autocuidado","Una cosa más que estoy aprendiendo a priorizar","Adaptación de la colaboración dental a TikTok, con un enfoque más cotidiano y menos publicitario.","Video corto"],
+["s","Todas","Crecimiento personal","Equivocarte vs. aprender del error","“Hay una gran diferencia entre equivocarte y aprender del error para hacer algo distinto la próxima vez.”","Historia"]]],
+["Miércoles","30/09",[
+["s","Todas","Liderazgo","Gestionar lo diferente","“Liderar no es conseguir que todos trabajen como tú, sino aprender a gestionar lo diferente.”","Historia"]]],
+["Jueves","01/10",[
+["h","Instagram","Sueños / Comunicación","Un proyecto universitario que está empezando a convertirse en algo más","Presentar Mamá Creció desde tu experiencia personal: cómo un proyecto académico te permitió conectar nuevamente con tu propósito de comunicar con impacto y trabajar una problemática que te importa. Sin convertirlo en una presentación institucional del podcast.","Reel"],
+["h","TikTok","Sueños / Propósito","Cuando un trabajo de universidad conecta con algo que siempre quisiste hacer","Versión más emocional y cercana. Mostrar fragmentos del proceso de producción y contar brevemente qué significa para ti estar creando algo con propósito mientras todavía estás estudiando.","Video storytelling"],
+["s","Todas","Amor propio","Enfócate en lo que mereces","Mantener tu frase corta. El foco está en estándares personales, oportunidades y la vida que estás construyendo, no en relaciones sentimentales.","Historia"]]],
+["Viernes","02/10",[
+["l","TikTok","Alcance / Marca personal","Trend adaptado a una mujer que está construyendo muchas versiones de sí misma","Utilizar un trend actual aterrizado a tu realidad: trabajo + universidad + comunicación + proyectos + entrenamiento. La gracia está en que el trend refuerce tu narrativa, no en copiarlo literalmente.","Trend"],
+["s","Todas","Construcción personal","La versión de ti que admiras se construye en quién eliges ser cada día","Reflexión sobre identidad: la mejor versión no aparece de golpe, se construye a través de decisiones pequeñas y consistentes.","Historia"]]],
+["Sábado","03/10",[
+["r","Instagram","Vida real","Las piezas que también forman mi vida","Carrusel lifestyle con momentos reales de la semana: trabajo, universidad, gym, proyectos, personas, café, etc. No presentarlo como un simple “photo dump”, sino como pequeñas piezas de la vida que estás construyendo.","Carrusel"],
+["h","TikTok","Marca personal / Storytelling","Algo que esta semana me hizo pensar","Storytime breve sobre una situación real de la semana y el aprendizaje que dejó. Puede ser una reflexión relacionada con el foco, la productividad o cómo estás aprendiendo a administrar tu energía.","Storytime"],
+["s","Todas","Descanso","Un día de descanso no necesariamente es un día perdido","Recordatorio de que descansar también forma parte de sostener una vida exigente sin convertir productividad en medida de valor.","Historia"]]],
+["Domingo","04/10",[
+["s","Todas","Fe / Espiritualidad","Confiar en el proceso","Cierre de semana desde la idea de que no todo tiene que estar resuelto para seguir avanzando.","Historia"]]]
+]],
+["Semana 2 · 05/10 – 11/10"],["Semana 3 · 12/10 – 18/10"],["Semana 4 · 19/10 – 25/10"],["Semana 5 · 26/10 – 01/11"]];
+
+const tabs=document.getElementById('tabs'),weeks=document.getElementById('weeks');
+W.forEach((w,i)=>{
+  const b=document.createElement('button');b.className='tab'+(i?'':' active');b.textContent='Semana '+(i+1);b.onclick=()=>show(i);tabs.appendChild(b);
+  const d=document.createElement('div');d.className='week'+(i?'':' active');
+  let h='<div class="week-label">'+w[0]+(w[1]?' — “'+w[1]+'”':'')+'</div>';
+  if(!w[2]){h+='<div class="pending">Contenido pendiente. Se cargará cuando se envíe esta semana.</div>'}
+  else w[2].forEach(([n,f,items])=>{
+    h+='<div class="day"><div class="day-header"><div class="day-name">'+n+' '+f+'</div><div class="day-divider"></div></div><div class="cards">';
+    items.forEach(([t,p,pil,ti,de,fo])=>{
+      h+='<div class="card '+t+'"><div class="card-top"><span class="badge">'+fo+'</span><span class="platform">'+p+'</span></div>'
+      +'<div class="card-title">'+ti+'</div><div class="card-body">'+de+'</div><div class="pillar">'+pil+'</div>'
+      +(t=='s'?'':'<div class="sec"><div class="sec-label">Caption</div><textarea class="field" rows="2" placeholder="Escribe tu caption aquí…"></textarea></div>')
+      +'<div class="sec"><div class="sec-label">Referencias</div><textarea class="field" rows="1" placeholder="Audio, links, ideas de producción…"></textarea></div></div>';
+    });
+    h+='</div></div>';
+  });
+  d.innerHTML=h;weeks.appendChild(d);
+});
+function show(i){document.querySelectorAll('.week').forEach((w,j)=>w.classList.toggle('active',j===i));document.querySelectorAll('.tab').forEach((t,j)=>t.classList.toggle('active',j===i));}
+</script>
+</body>
+</html>
